@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @reservation.user_id %>
+</p>
+
+<p>
+  <b>Flight:</b>
+  <%= @reservation.flight_id %>
+</p>
+
+<p>
+  <b>Departure date:</b>
+  <%= @reservation.departure_date %>
+</p>
+
+<p>
+  <b>Credit card num:</b>
+  <%= @reservation.credit_card_num %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @reservation.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @reservation.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

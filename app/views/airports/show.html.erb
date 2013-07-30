@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>City:</b>
+  <%= @airport.city %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @airport.code %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @airport.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @airport.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_airport_path(@airport) %> |
+<%= link_to 'Back', airports_path %>
